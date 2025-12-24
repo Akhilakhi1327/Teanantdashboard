@@ -1,0 +1,138 @@
+
+.geo-summary {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.geo-summary .label {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.geo-summary .value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 8px 0;
+}
+
+.geo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 40px;
+}
+
+.geo-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.geo-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.student-count {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.device-chart-container {
+  margin-bottom: 24px;
+}
+
+.device-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.device-card {
+  background-color: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+}
+
+.device-icon {
+  color: #105144;
+  margin-bottom: 8px;
+}
+
+.device-percent {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.device-name {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.purchases-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.purchases-table th {
+  text-align: left;
+  padding: 16px 0;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.purchases-table td {
+  padding: 20px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.purchases-table tr:last-child td {
+  border-bottom: none;
+}
+
+.person-name {
+  color: #334155 !important;
+  font-weight: 500;
+}
+
+.course-name {
+  color: #64748b;
+}
+
+.price {
+  font-weight: 600;
+  color: #334155 !important;
+}
+
+.btn-details {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #d1fae5;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-details:hover {
+  background-color: #d1fae5;
+}

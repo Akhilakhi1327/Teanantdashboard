@@ -1,0 +1,197 @@
+{
+  "user": {
+    "name": "Tenant Name",
+    "welcomeMessage": "Welcome back, Tenant Name 👋",
+    "subMessage": "Here's what's happening with your courses today"
+  },
+  "currentDate": "Thursday, November 20, 2025",
+  "stats": [
+    {
+      "id": 1,
+      "title": "TOTAL STUDENTS",
+      "value": "2,847",
+      "percentage": "12.5%",
+      "trend": "up",
+      "subtext": "356 this month",
+      "subtextTrend": "up",
+      "icon": "Users"
+    },
+    {
+      "id": 2,
+      "title": "ACTIVE THIS WEEK",
+      "value": "1,632",
+      "percentage": "8.2%",
+      "trend": "up",
+      "subtext": "124 from last week",
+      "subtextTrend": "up",
+      "icon": "UserCheck"
+    },
+    {
+      "id": 3,
+      "title": "TOTAL REVENUE",
+      "value": "₹2,53,962",
+      "percentage": "15.3%",
+      "trend": "up",
+      "subtext": "23% this quarter",
+      "subtextTrend": "up",
+      "icon": "IndianRupee"
+    },
+    {
+      "id": 4,
+      "title": "MONTHLY REVENUE",
+      "value": "₹45,135",
+      "percentage": "6.8%",
+      "trend": "up",
+      "subtext": "08% last month",
+      "subtextTrend": "up",
+      "icon": "IndianRupee"
+    },
+    {
+      "id": 5,
+      "title": "PUBLISHED COURSES",
+      "value": "38",
+      "percentage": "7.9%",
+      "trend": "up",
+      "subtext": "3 added this month",
+      "subtextTrend": "up",
+      "icon": "BookOpen"
+    },
+    {
+      "id": 6,
+      "title": "ACTIVE COURSES",
+      "value": "32",
+      "percentage": "7.9%",
+      "trend": "down",
+      "subtext": "6 un-published",
+      "subtextTrend": "down",
+      "icon": "CheckSquare"
+    }
+  ],
+  "revenueTrend": {
+    "totalRevenue": "$243.4K",
+    "avgMonth": "$20.3K",
+    "growth": "+18.4% Growth",
+    "data": [
+      { "name": "Jan", "value": 12000 },
+      { "name": "Feb", "value": 16000 },
+      { "name": "Mar", "value": 14000 },
+      { "name": "Apr", "value": 19000 },
+      { "name": "May", "value": 16500 },
+      { "name": "Jun", "value": 21000 },
+      { "name": "Jul", "value": 19500 },
+      { "name": "Aug", "value": 23000 },
+      { "name": "Sep", "value": 22000 },
+      { "name": "Oct", "value": 25000 },
+      { "name": "Nov", "value": 24000 },
+      { "name": "Dec", "value": 29000 }
+    ]
+  },
+  "revenueBreakdown": {
+    "totalRevenue": "₹2,53,962",
+    "quarterGrowth": "23% this quarter",
+    "sources": [
+      { "name": "Course Sales", "amount": "₹1,83,962", "percentage": 65 },
+      { "name": "Live Classes & Workshops", "amount": "₹53,743", "percentage": 25 },
+      { "name": "One on one mentor ship", "amount": "₹23,235", "percentage": 10 }
+    ]
+  },
+  "studentDemographics": {
+    "ageDistribution": [
+      { "name": "18-24", "value": 842, "percentage": "30%", "color": "#6366f1" },
+      { "name": "25-34", "value": 1123, "percentage": "39%", "color": "#a855f7" },
+      { "name": "35-44", "value": 562, "percentage": "20%", "color": "#ec4899" },
+      { "name": "45+", "value": 320, "percentage": "11%", "color": "#f59e0b" }
+    ],
+    "genderDistribution": [
+      { "name": "Male", "value": 1654, "percentage": 58 },
+      { "name": "Female", "value": 1023, "percentage": 36 },
+      { "name": "Others", "value": 170, "percentage": 6 }
+    ]
+  },
+  "enrollmentTrends": {
+    "totalEnrollments": "3,025",
+    "completions": "1,749",
+    "avgMonth": "252",
+    "growth": "+28.4% Growth",
+    "data": [
+      { "name": "Jan", "enrollments": 150, "completions": 80 },
+      { "name": "Feb", "enrollments": 180, "completions": 90 },
+      { "name": "Mar", "enrollments": 160, "completions": 85 },
+      { "name": "Apr", "enrollments": 220, "completions": 110 },
+      { "name": "May", "enrollments": 190, "completions": 100 },
+      { "name": "Jun", "enrollments": 260, "completions": 140 },
+      { "name": "Jul", "enrollments": 240, "completions": 130 },
+      { "name": "Aug", "enrollments": 280, "completions": 160 },
+      { "name": "Sep", "enrollments": 290, "completions": 170 },
+      { "name": "Oct", "enrollments": 270, "completions": 150 },
+      { "name": "Nov", "enrollments": 320, "completions": 190 },
+      { "name": "Dec", "enrollments": 350, "completions": 200 }
+    ]
+  },
+  "conversionFunnel": {
+    "overallConversion": "22.9%",
+    "steps": [
+      { "label": "Visitors", "users": "12,450", "percentage": 100, "drop": null, "icon": "Users" },
+      { "label": "Course Views", "users": "8,934", "percentage": 72, "drop": "-28%", "icon": "Eye" },
+      { "label": "Add to Cart", "users": "4,823", "percentage": 39, "drop": "-33%", "icon": "ShoppingCart" },
+      { "label": "Checkout Started", "users": "3,245", "percentage": 26, "drop": "-13%", "icon": "CreditCard" },
+      { "label": "Purchase Complete", "users": "2,847", "percentage": 23, "drop": "-3%", "icon": "IndianRupee" }
+    ],
+    "optimization": {
+      "text": "The biggest drop-off (33%) occurs between Course Views and Add to Cart. Consider improving course descriptions, adding video previews, or offering limited-time discounts."
+    }
+  },
+  "dailyActiveLearners": {
+    "thisWeek": "9,359",
+    "dailyAvg": "1,337",
+    "data": [
+      { "day": "Mon", "value": 1200 },
+      { "day": "Tue", "value": 1350 },
+      { "day": "Wed", "value": 1500 },
+      { "day": "Thu", "value": 1400 },
+      { "day": "Fri", "value": 1600 },
+      { "day": "Sat", "value": 1100 },
+      { "day": "Sun", "value": 950 }
+    ]
+  },
+  "lessonCompletionTrends": {
+    "totalCompleted": "2,631",
+    "completionRate": "86%",
+    "data": [
+      { "week": "W1", "started": 450, "completed": 350 },
+      { "week": "W2", "started": 480, "completed": 390 },
+      { "week": "W3", "started": 520, "completed": 450 },
+      { "week": "W4", "started": 490, "completed": 410 },
+      { "week": "W5", "started": 580, "completed": 530 },
+      { "week": "W6", "started": 550, "completed": 500 }
+    ]
+  },
+  "geographicDistribution": {
+    "totalStudents": "2,847",
+    "growth": "23% this quarter",
+    "states": [
+      { "name": "Andhra Pradesh", "percentage": 30, "students": 847 },
+      { "name": "Telangana", "percentage": 30, "students": 847 },
+      { "name": "Kerala", "percentage": "05", "students": 147 },
+      { "name": "Maharashtra", "percentage": 10, "students": 287 },
+      { "name": "Tamilnadu", "percentage": 15, "students": 427 },
+      { "name": "Karnataka", "percentage": 10, "students": 287 }
+    ]
+  },
+  "deviceUsage": {
+    "data": [
+      { "name": "Desktop", "value": 54, "color": "#105144", "icon": "Monitor" },
+      { "name": "Mobile", "value": 35, "color": "#10b981", "icon": "Smartphone" },
+      { "name": "Tablet", "value": 11, "color": "#bbf7d0", "icon": "Tablet" }
+    ]
+  },
+  "recentPurchases": [
+    { "id": 1, "name": "Michael Chen", "course": "UI/UX Design Beginner", "price": "₹1,599", "date": "Nov 10th, 2025", "type": "Credit card" },
+    { "id": 2, "name": "Sarah Patel", "course": "Web Development Essentials", "price": "₹2,499", "date": "Dec 5th, 2025", "type": "Debit card" },
+    { "id": 3, "name": "James Smith", "course": "Data Science with Python", "price": "₹3,200", "date": "Jan 15th, 2026", "type": "PayPal" },
+    { "id": 4, "name": "Emily Johnson", "course": "Graphic Design Fundamentals", "price": "₹1,800", "date": "Feb 20th, 2026", "type": "Credit card" },
+    { "id": 5, "name": "David Brown", "course": "Digital Marketing Masterclass", "price": "₹4,000", "date": "Mar 10th, 2026", "type": "Net banking" },
+    { "id": 6, "name": "Ava Lee", "course": "Mobile App Development", "price": "₹2,800", "date": "Apr 5th, 2026", "type": "Debit card" },
+    { "id": 7, "name": "Oliver Wilson", "course": "SEO Optimization Techniques", "price": "₹1,999", "date": "May 25th, 2026", "type": "Credit card" }
+  ]
+}
