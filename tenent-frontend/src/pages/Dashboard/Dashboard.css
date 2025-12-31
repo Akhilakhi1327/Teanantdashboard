@@ -59,13 +59,15 @@
   grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1439px) {
+  /* Laptop Large (1366px - 1439px) & Medium (1280px - 1365px) fallback */
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1279px) {
+  /* Laptop Small (1024px - 1279px) */
 
   .charts-grid-row-1,
   .charts-grid-row-2,
@@ -81,6 +83,7 @@
 }
 
 @media (max-width: 768px) {
+  /* Mobile / Tablet Portrait components */
   .main-content {
     margin-left: 0;
   }

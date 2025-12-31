@@ -4,7 +4,7 @@ import { Users } from 'lucide-react';
 
 const StudentDemographics = ({ data }) => {
   return (
-    <div className="chart-card" style={{ minHeight: '481px', padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+    <div className="chart-card student-demo-card">
       <div className="chart-header">
         <div>
           <h3>Student Demographics</h3>
@@ -15,11 +15,11 @@ const StudentDemographics = ({ data }) => {
         </div>
       </div>
 
-      <div className="demographics-content" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
-        <div className="age-section" style={{ height: '152px', display: 'flex', flexDirection: 'column', gap: '27px' }}>
+      <div className="demographics-content demographics-content-styled">
+        <div className="age-section age-section-styled">
           <h4 style={{ margin: 0 }}>AGE DISTRIBUTION</h4>
-          <div className="donut-container" style={{ flex: 1, minHeight: 0, display: 'flex', alignItems: 'center' }}>
-            <div style={{ width: '140px', height: '100%' }}>
+          <div className="donut-container donut-container-styled">
+            <div className="chart-wrapper-styled">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
@@ -53,7 +53,7 @@ const StudentDemographics = ({ data }) => {
           </div>
         </div>
 
-        <div className="gender-section" style={{ height: '168px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <div className="gender-section gender-section-styled">
           <h4 style={{ margin: 0 }}>GENDER DISTRIBUTION</h4>
           <div className="gender-list">
             {data.genderDistribution.map((item, index) => (

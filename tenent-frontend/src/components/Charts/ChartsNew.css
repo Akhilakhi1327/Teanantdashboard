@@ -318,3 +318,77 @@
   border-radius: 50%;
   display: block;
 }
+
+/* Student Demographics Responsive Classes */
+.age-section-styled {
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.gender-section-styled {
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.demographics-content-styled {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1279px) {
+  .age-section-styled,
+  .gender-section-styled {
+    height: auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+  }
+  
+  .demographics-content-styled {
+    display: block; /* Let them stack naturally */
+  }
+}
+
+.donut-container-styled {
+  flex: 1;
+  min-height: 0;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.chart-wrapper-styled {
+  width: 140px;
+  height: 100%;
+}
+
+@media (max-width: 1279px) {
+  .donut-container-styled {
+    min-height: 150px;
+  }
+  
+  .chart-wrapper-styled {
+    height: 140px; /* Explicit height on mobile */
+  }
+}
+
+.student-demo-card {
+  min-height: 481px;
+  padding: 24px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1279px) {
+  .student-demo-card {
+    min-height: auto;
+    gap: 24px;
+    justify-content: flex-start;
+  }
+}
