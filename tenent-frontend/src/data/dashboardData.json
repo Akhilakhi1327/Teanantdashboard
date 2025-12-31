@@ -193,5 +193,20 @@
     { "id": 5, "name": "David Brown", "course": "Digital Marketing Masterclass", "price": "₹4,000", "date": "Mar 10th, 2026", "type": "Net banking" },
     { "id": 6, "name": "Ava Lee", "course": "Mobile App Development", "price": "₹2,800", "date": "Apr 5th, 2026", "type": "Debit card" },
     { "id": 7, "name": "Oliver Wilson", "course": "SEO Optimization Techniques", "price": "₹1,999", "date": "May 25th, 2026", "type": "Credit card" }
-  ]
+  ],
+  "topSellingCourses": [
+    { "id": 1, "name": "Advanced React Development", "category": "Web Development", "rating": 4.8, "sales": 847, "revenue": "₹12,450" },
+    { "id": 2, "name": "UI/UX Design Masterclass", "category": "Design", "rating": 4.9, "sales": 654, "revenue": "₹9,820" },
+    { "id": 3, "name": "Digital Marketing Strategy", "category": "Marketing", "rating": 4.7, "sales": 542, "revenue": "₹8,340" },
+    { "id": 4, "name": "Python for Data Science", "category": "Data Science", "rating": 4.8, "sales": 420, "revenue": "₹7,210" },
+    { "id": 5, "name": "Mobile App Development", "category": "Development", "rating": 4.6, "sales": 380, "revenue": "₹6,150" }
+  ],
+  "courseCompletionStatus": {
+    "totalStudents": "1,483",
+    "status": [
+      { "name": "In Progress", "value": 892, "percentage": "48%", "color": "#10b981" },
+      { "name": "Completed", "value": 456, "percentage": "34%", "color": "#105144" },
+      { "name": "Not Started", "value": 135, "percentage": "18%", "color": "#e2e8f0" }
+    ]
+  }
 }

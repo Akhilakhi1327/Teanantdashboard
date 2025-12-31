@@ -12,6 +12,8 @@ import LessonCompletionTrends from '../../components/Charts/LessonCompletionTren
 import GeographicDistribution from '../../components/Charts/GeographicDistribution';
 import DevicePlatformUsage from '../../components/Charts/DevicePlatformUsage';
 import RecentPurchases from '../../components/Charts/RecentPurchases';
+import TopSellingCourses from '../../components/Charts/TopSellingCourses';
+import CourseCompletionStatus from '../../components/Charts/CourseCompletionStatus';
 import dashboardData from '../../data/dashboardData.json';
 import '../../components/Charts/Charts.css';
 import '../../components/Charts/ChartsNew.css';
@@ -23,7 +25,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    
+
     const fetchData = () => {
       setTimeout(() => {
         setData(dashboardData);
@@ -66,6 +68,15 @@ const Dashboard = () => {
             </div>
             <div className="chart-col-wide">
               <EnrollmentTrends data={data.enrollmentTrends} />
+            </div>
+          </div>
+
+          <div className="charts-grid-row-sales">
+            <div className="chart-col-wide">
+              <TopSellingCourses data={data.topSellingCourses} />
+            </div>
+            <div className="chart-col-narrow">
+              <CourseCompletionStatus data={data.courseCompletionStatus} />
             </div>
           </div>
 

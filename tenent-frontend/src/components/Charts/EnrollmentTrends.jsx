@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const EnrollmentTrends = ({ data }) => {
   return (
-    <div className="chart-card">
+    <div className="chart-card" style={{ minHeight: '481px', padding: '24px', display: 'flex', flexDirection: 'column', gap: '44px' }}>
       <div className="chart-header">
         <div>
           <h3>Enrollment Trends (12 Months)</h3>
