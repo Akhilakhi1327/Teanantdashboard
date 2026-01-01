@@ -1,12 +1,21 @@
 .stat-card {
   background-color: #ffffff;
   border-radius: 12px;
-  padding: 20px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
+  width: 256px;
+  height: 208px;
+  gap: 16px;
+  opacity: 1;
+  border: 0.3px solid #f1f5f9;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  border: 1px solid #f1f5f9;
   transition: transform 0.2s ease;
+}
+
+.stat-card:first-child {
+  border: 2px solid #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1), 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .stat-card:hover {
@@ -28,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0fdf4; 
-  color: #10b981; 
+  background-color: #f0fdf4;
+  color: #10b981;
 }
 
 .stat-icon-wrapper {
