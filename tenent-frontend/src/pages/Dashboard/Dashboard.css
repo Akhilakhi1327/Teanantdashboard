@@ -7,17 +7,26 @@
 
 .main-content {
   flex: 1;
-  margin-left: 250px; /* Sidebar width */
+  margin-left: 250px;
+  /* Sidebar width */
   display: flex;
   flex-direction: column;
   transition: margin-left 0.3s ease;
+}
+
+/* Remove sidebar margin on tablet and mobile */
+@media (max-width: 1023px) {
+  .main-content {
+    margin-left: 0;
+  }
 }
 
 .dashboard-container {
   padding: 32px;
   flex: 1;
   width: 100%;
-  max-width: 1600px; /* Prevents cards from getting too wide on huge monitors */
+  max-width: 1600px;
+  /* Prevents cards from getting too wide on huge monitors */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -27,7 +36,7 @@
 .stats-grid {
   display: grid;
   /* Forces 6 columns in one row for desktop */
-  grid-template-columns: repeat(6, 1fr); 
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
   margin-bottom: 24px;
   width: 100%;
@@ -58,24 +67,38 @@
   margin-bottom: 24px;
 }
 
-.charts-grid-row-1, .charts-grid-row-sales { grid-template-columns: 2fr 1fr; }
-.charts-grid-row-2 { grid-template-columns: 632fr 965fr; }
-.charts-grid-row-3, .charts-grid-row-6 { grid-template-columns: 1fr; }
-.charts-grid-row-4, .charts-grid-row-5 { grid-template-columns: 1fr 1fr; }
+.charts-grid-row-1,
+.charts-grid-row-sales {
+  grid-template-columns: 2fr 1fr;
+}
+
+.charts-grid-row-2 {
+  grid-template-columns: 632fr 965fr;
+}
+
+.charts-grid-row-3,
+.charts-grid-row-6 {
+  grid-template-columns: 1fr;
+}
+
+.charts-grid-row-4,
+.charts-grid-row-5 {
+  grid-template-columns: 1fr 1fr;
+}
 
 /* --- RESPONSIVENESS (Media Queries) --- */
 
-/* For smaller laptops/tablets: move to 3 columns per row (2 rows total) */
-@media (max-width: 1300px) {
+/* Laptop Medium (1280px - 1365px) */
+@media (max-width: 1365px) and (min-width: 1280px) {
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* For tablets and small screens */
-@media (max-width: 1024px) {
-  .main-content {
-    margin-left: 0; /* Sidebar usually collapses to a hamburger menu here */
+/* Laptop Small (1024px - 1279px) */
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .charts-grid-row-1,
@@ -87,20 +110,84 @@
   }
 }
 
-/* For mobile devices: 2 columns or 1 column */
-@media (max-width: 640px) {
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2x3 grid on mobile */
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    /* Sidebar usually collapses to a hamburger menu here */
   }
-  
+
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .stat-card {
+    padding: 12px;
+    min-height: 140px;
+  }
+
+  .charts-grid-row-1,
+  .charts-grid-row-2,
+  .charts-grid-row-3,
+  .charts-grid-row-4,
+  .charts-grid-row-5,
+  .charts-grid-row-6,
+  .charts-grid-row-sales {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Mobile (480px - 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+  .main-content {
+    margin-left: 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .charts-grid-row-1,
+  .charts-grid-row-2,
+  .charts-grid-row-4,
+  .charts-grid-row-5,
+  .charts-grid-row-sales {
+    grid-template-columns: 1fr;
+  }
+
   .dashboard-container {
     padding: 16px;
   }
 }
 
-@media (max-width: 480px) {
+/* Small Mobile (below 480px) */
+@media (max-width: 479px) {
+  .main-content {
+    margin-left: 0;
+  }
+
   .stats-grid {
-    grid-template-columns: 1fr; /* 1 column on very small phones */
+    grid-template-columns: 1fr;
+  }
+
+  .charts-grid-row-1,
+  .charts-grid-row-2,
+  .charts-grid-row-4,
+  .charts-grid-row-5,
+  .charts-grid-row-sales {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-container {
+    padding: 12px;
   }
 }
 
