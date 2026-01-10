@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   width: 256px;
+  min-width: 256px;
+  flex-shrink: 0;
   height: 208px;
   gap: 16px;
   opacity: 1;

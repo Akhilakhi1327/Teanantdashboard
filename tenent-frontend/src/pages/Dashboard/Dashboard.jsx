@@ -23,6 +23,7 @@ import './Dashboard.css';
 const Dashboard = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   useEffect(() => {
 
@@ -36,16 +37,20 @@ const Dashboard = () => {
     fetchData();
   }, []);
 
+  const toggleSidebar = () => {
+    setSidebarCollapsed(!sidebarCollapsed);
+  };
+
   if (loading) {
     return <div className="loading">Loading Dashboard...</div>;
   }
 
   return (
-    <div className="dashboard-layout">
-      <Sidebar />
+    <div className={`dashboard-layout ${sidebarCollapsed ? 'sidebar-collapsed' : ''}`}>
+      <Sidebar collapsed={sidebarCollapsed} />
       <div className="main-content">
         <div className="dashboard-container">
-          <Header user={data.user} currentDate={data.currentDate} />
+          <Header user={data.user} currentDate={data.currentDate} onToggleSidebar={toggleSidebar} />
 
           <div className="stats-grid">
             {data.stats.map((stat) => (
