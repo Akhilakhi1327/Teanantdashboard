@@ -2,9 +2,9 @@ import React from 'react';
 import { LayoutDashboard, BookOpen, Users, Settings, HelpCircle, LogOut, FileText, BarChart2 } from 'lucide-react';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ collapsed = false }) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <div className="sidebar-logo">
         <div className="logo-icon">L</div>
         <h2>LearnHub</h2>
